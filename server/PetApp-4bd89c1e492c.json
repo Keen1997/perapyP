@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "petapp-256911",
+  "private_key_id": "4bd89c1e492c43ac04121b7c677bb31b35191a14",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC/v4Wf1zOgichk\n9bQPL/PEiPo6aRp0TpF0c2yL/o9prsDzfO8y9ucFfncb8jtc2L4HiSiTiY0tbrwF\nuB2aU82q/L49Ab3ipJqfHW+s7A9RwHz5i/oWzTh0lOagNDqucHAHcZ3+Sr9+xybu\ndL8ulsIS+PuYhnXL1JFPBRyBMwuFpbYf+MPdHzo7AuyU0PE6Dj/6oAG2oAUzr5hK\naRVWEISSoQleZRuJwGonP+06UHdGBmiOEmQE5MhYYpOKrhGhx6NGdAudHFT2j4vZ\nM2aSG9KXQmy4jjaZ6pWABTEurn9M/fEolfOQXca2B0rr6vxj+BDTJ8jGEjy6F532\nx09+y01bAgMBAAECggEACDuzAx/8aYJBBoS+TICkmOXAyM1Gg4P0Hunt2Tz+72y/\ngDT3GFsdpFC/0IVgIyZzUmODSIJ5e1/r1tsG+l9qz1K24Gu4uYiT0w0yhFxGdB4t\nv5FRFbWOHQNfu7VCZ8cQKGGqhQa0nj7y3v5ITznN736dXvk3CZ+A9cGkba/BaOWX\nfu58caBN3xWKLAP1MWsdL3s/1c2wSywPHIMH+kp0LuwVkVbJTaEc9beN6HmNlfOP\nXyG12Vy6WDE7YQ5RbwbxMHHBR4rTTGylO/abyTlC+PLTeL0pgedNPpAiLWwFBk1i\nKaXLywwbtIP/pwAg331U0qDV4v5f0OhvTnpsVWuvkQKBgQD26zi5D6nabEXInJb3\nMI91AFGwOv/ctaU6BNrvcT/aAbF/04KIawdRXr1F91xKCqr7ZjaEO1cCsZr0KA6R\nHCoS6yuzGNPjNF8WuI0v4m5rcBrSaVhDMdnQ4eZsz6gYWR74gGA0pzCcal3qTsFr\n4PxGCViV1jdOpO9nV98CM4UtZQKBgQDGzNwecVM2vjw1HPfR4iqtoUtJkDqfaFtP\nHj3dW8T6f3HEXS8dueLkH/r0Z5MC4hlCVcsLuJSH4zmPh5X/CPKDfn6XWj5cW2Tj\nsji0PsZP2DU16f2GUrQ7/MoYG4EtEGZMQlK56+oj3uJPyKrwy+0GpxaoTv1tJbEE\nryAV/wlDvwKBgQClkXqalQc3AE0WxPFx1S0MrmcYPaedrmuZaPIJhq3jGCmWZhRs\nNyBUDqvqA4Dt4RNfud0qc8PXeZJGz6lc4j7QKsNFt4s1GcP9L0j05+dUwXoqxxq5\nC+9bYm6pXeEAWpoq1aItDELLT4Oj/qUyGk3vBItTBa5WXMBvUnumNTfDBQKBgHP0\ndcfD7feWSmPoe5wOQTp5RAKqf6cPJYMmbos4xdIel+sjNyItlGvfQ29fIl6iJn2M\nsRwrE2eXX7GaMiFJxLpyA8CgQJN6M4SkJXLs0psrzw2dZ+T7RGlg7zfUgyoX0LNW\nVA5hznYRwQssTpiZOa2RtCODv0n0nCXRR/PMiEjdAoGABRFY6B2EcQhsyUgD387K\nnqVn/m4JMSyVQ/oK/StdzEsWkzf72DkS7ECVbpfz5iLvUKsLJd0/tnGrYL9tN1UQ\nqT7FtM8EqU6ptodOEpcJmM7f47aY97SVJCLP8pYCXQRdBE+GG6yDnsoqJjwkfz3r\ntVquZYM4pi8PeGqChvBAAaI=\n-----END PRIVATE KEY-----\n",
+  "client_email": "petapp@petapp-256911.iam.gserviceaccount.com",
+  "client_id": "106490446092437819694",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/petapp%40petapp-256911.iam.gserviceaccount.com"
+}
