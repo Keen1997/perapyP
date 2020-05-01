@@ -20,7 +20,7 @@ export default class SmileButton extends React.Component {
                         onPressOut={this.props.onPressOutSmile}
                     >
                         <Image
-                            style={{ width: 110, height: 110 }}
+                            style={{ width: 100, height: 100 }}
                             source={require('../assets/icons/smile.png')}
                         />
                     </TouchableOpacity>
@@ -46,6 +46,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     menuIcon: {
-        width: 110,
+        width: 100,
     },
 })

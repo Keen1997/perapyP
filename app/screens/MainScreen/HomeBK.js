@@ -297,9 +297,9 @@ export default class Home extends React.Component {
     }
 
     setTranscription = async (data) => {
-        if (TranscriptToAction(data) != null){
+        if (TranscriptToAction(data) != null) {
             this.setState({
-                activity: 'reactVoice-'+TranscriptToAction(data),
+                activity: 'reactVoice-' + TranscriptToAction(data),
                 doingActivity: true,
             })
             setTimeout(() => {
@@ -311,11 +311,18 @@ export default class Home extends React.Component {
         }
     }
 
+    backgroundImage() {
+        firebase.database().ref('/users/' + firebase.auth().currentUser.uid + '/backgroundPink').once('value', (snap) => {
+            if (snap.val() == true) return 'pink'
+            else return 'normal'
+        })
+    }
+
     render() {
         return (
             <ImageBackground
                 style={styles.container}
-                source={require('../../assets/background/House.png')}
+                source={this.backgroundImage() == 'normal' ? require('../../assets/background/House.jpg') : require('../../assets/background/House-pink.jpg')}
             >
 
                 {/* -------- Behind Camera -------- */}
@@ -335,7 +342,7 @@ export default class Home extends React.Component {
 
                         {/* -------- Setting Icon -------- */}
                         <TouchableOpacity
-                            onPress={() => { 
+                            onPress={() => {
                                 this.props.toSetting()
                                 playSound(require('../../assets/sounds/click.wav'))
                             }}
@@ -431,9 +438,26 @@ export default class Home extends React.Component {
                             width: Dimensions.get('window').width / 7 * 2 + 50,
                             height: Dimensions.get('window').height / 10 + 40,
                             left: Dimensions.get('window').width / 6 - 60,
-                            top: Dimensions.get('window').height / 4 + 30
+                            top: Dimensions.get('window').height / 3 - 80
                         }}
                         onPress={() => this.sleeping()}
+                    >
+                    </TouchableOpacity>
+                    
+                   {/* -------- Shop Mapping Image -------- */}
+                   <TouchableOpacity
+                        style={{
+                            position: 'absolute',
+                            // borderWidth: 1,
+                            width: Dimensions.get('window').width / 6 * 2,
+                            height: Dimensions.get('window').height / 10 + 40,
+                            left: Dimensions.get('window').width / 6 - 60,
+                            top: Dimensions.get('window').height / 3 + 30
+                        }}
+                        onPress={() => {
+                            this.props.toShop()
+                            playSound(require('../../assets/sounds/door.wav'))
+                        }}
                     >
                     </TouchableOpacity>
 

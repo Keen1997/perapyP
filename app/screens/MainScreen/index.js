@@ -27,6 +27,7 @@ export default class MainScreen extends React.Component {
                         toSetting={() => this.changeScreen('setting')}
                         toMap={() => this.changeScreen('map')}
                         toMinigame={() => this.changeScreen('minigame')}
+                        toShop={() => this.changeScreen('shop')}
                     />
                 )
             case 'step':
