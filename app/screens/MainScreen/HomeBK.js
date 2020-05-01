@@ -51,12 +51,14 @@ export default class Home extends React.Component {
         hygienePercent: 0,
         transcription: null,
         transcriptionShow: '',
-        voiceLanguage: 'en-US'
+        voiceLanguage: 'en-US',
+        background: 'normal'
     }
 
     componentDidMount() {
         this.getStatus()
         this.getStep()
+        this.backgroundImage()
     }
 
     // Listening status from database
@@ -312,9 +314,9 @@ export default class Home extends React.Component {
     }
 
     backgroundImage() {
-        firebase.database().ref('/users/' + firebase.auth().currentUser.uid + '/backgroundPink').once('value', (snap) => {
-            if (snap.val() == true) return 'pink'
-            else return 'normal'
+        firebase.database().ref('/users/' + firebase.auth().currentUser.uid).once('value', (snap) => {
+            if (snap.val().backgroundPink) this.setState({ background: 'pink' })
+            else this.setState({ background: 'normal' })
         })
     }
 
@@ -322,7 +324,7 @@ export default class Home extends React.Component {
         return (
             <ImageBackground
                 style={styles.container}
-                source={this.backgroundImage() == 'normal' ? require('../../assets/background/House.jpg') : require('../../assets/background/House-pink.jpg')}
+                source={this.state.background == 'normal' ? require('../../assets/background/House.jpg') :require('../../assets/background/House-pink.jpg') }
             >
 
                 {/* -------- Behind Camera -------- */}

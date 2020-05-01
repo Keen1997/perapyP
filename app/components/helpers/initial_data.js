@@ -62,6 +62,5 @@ export default {
     tutorial: true,
     voiceLanguage: 'en-US',
     voiceServerIP: '',
-    background: 'normal',
     backgroundPink: false
 }

@@ -1,10 +1,10 @@
 {
-  "devToolsPort": 19002,
-  "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 6628,
-  "expoServerNgrokUrl": "https://yq-spj.keen12.app.exp.direct",
-  "packagerNgrokUrl": "https://packager.yq-spj.keen12.app.exp.direct",
-  "ngrokPid": 8272,
+  "devToolsPort": 19003,
+  "expoServerPort": 19004,
+  "packagerPort": 19005,
+  "packagerPid": 7236,
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null,
   "webpackServerPort": null
 }
